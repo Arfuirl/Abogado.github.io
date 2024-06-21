@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+       html{
+        scroll-behavior: smooth;
+       }
+        body{
+            background-color:darkgrey;
+        }
+img{
+  contain:content;
+}
+</style>
+<style> 
+  .mauka {
+    width: 10px;
+    height: 10px;
+    background: grey;
+    position: relative;
+    animation: mymove 5s infinite;
+  }
+  
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+  }
+  </style>
+  <div class="mauka"></div>  
+
+<img src="foto del despacho.png" alt="foto del despacho.png" width="400px" height="200px">
+<h2>Horario</h2>
+<img src="" alt="" style="opacity: .8;">
+<p> 12 a.m -8 p.m De Lunes a Domingo</p>
+<hr>
+<script>document.getElementById('button').onclick = function() { alert("La cita ha sido agendada."); }​;​   </script>
+<form>
+  <label for="fname">Nombres:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Apellidos:</label><br>
+  <input type="text" id="lname" name="lname" value="">
+</form>
+<h2 id="button">Agendar Cita</h2>
+
+<button type="submit" value="Enviar">Enviar</button>
+
+
+</body>
+</html>
